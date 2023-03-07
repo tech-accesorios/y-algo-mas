@@ -1,0 +1,16 @@
+.somos-div{
+    display: flex;
+    justify-content: center;
+}
+.somos-p{
+    width: 77%;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: 'Big Shoulders Display';
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    
+}
+.logo{
+    margin-top: 80px;
+}
