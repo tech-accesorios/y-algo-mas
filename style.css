@@ -1,0 +1,193 @@
+
+body{
+  background-image: url(./fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+a{
+  text-decoration: none;
+}
+.search-logo{
+  display: flex;
+  justify-content: space-between;
+  top: 10px;
+}
+/* buscar */
+.search-div{
+  width: 50%;
+  display: flex; 
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 8%;
+}
+.search-input{
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+  min-width: 50px;
+  height: 40px;
+  padding-left: 50px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: #0000002d 2px 2px 4px;
+  outline: none;
+
+}
+.search-lupa{
+  width: 28px;  
+  display: inline;
+  position: relative;
+  justify-content: center;
+  left: 45px;
+}
+
+
+
+/* logo */
+.logo{
+  display: flex; 
+  justify-content: flex-end;  
+  align-items: center;
+  margin-right: 12%;
+}
+.ta{
+  color: #6034ff;
+  font-family: 'Big Shoulders Display';
+  font-size: 75px;
+  text-shadow: #0000a7a4 0 0 20px;
+  -webkit-text-stroke: #0000a7a4 .5px;
+  display: flex;
+  justify-content: center;
+}
+.taa{
+  margin-top: -65px;
+}
+.yam{  
+  color: #fff;
+  font-family: 'Dancing Script';
+  font-size: 60px;
+  text-shadow: #000 0 0 1px;
+  margin-top: -94px;
+  margin-left: 38px;
+  display: flex;
+  justify-content: center;
+}
+/* cards */
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.div-cards{
+  width: 250px;
+  max-width: 90%;
+}
+.presio{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -20px;
+}
+.card{
+  border-radius: 0;
+  border: 0;
+}
+
+
+@media screen and (max-width:1200px) {
+  .search-logo{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .search-div{
+    width: 90%;
+    margin-left: 0;
+    justify-content: center;
+  }
+  .logo{
+    margin-right: 0;
+    justify-content: center;
+  }
+}
+
+
+
+@media screen and (max-width:556px) {
+.card{
+  margin: 0 !important;
+}
+}
+
+/*navegacion*/
+.nav-li{
+  font-family: 'Big Shoulders Display';
+  font-size: 30px;
+  list-style: none;
+}
+@media screen and (min-width:769px) {
+  #btn,
+  .nav-btn {
+      display: none;
+  }
+  label {
+      display: inline;
+  }
+  .nav-cont {
+      height: 100%;
+    }
+    .nav-ul {
+      display: flex;
+      justify-content: flex-start;
+  }
+  .nav-a {
+    color: #00031b;
+      position: relative;
+      top: 20px;
+      margin: 0 40px;
+  }
+  .nav-a:hover {
+    color: #6034ff;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+.nav-cont {
+      background-color: rgb(0, 0, 0, .9);
+      width: 83%;
+      max-width: 380px;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+      visibility: hidden;
+}
+#btn:checked~*.nav-cont {
+      visibility: visible;
+      position: absolute;
+      z-index: 30;
+}
+#btn {
+      display: none;
+}
+[for="btn"] {
+      visibility: initial;
+      display: flex;
+      justify-content: flex-end;
+      z-index: 30;
+}
+.nav-btn {
+      width: 40px;
+      margin: 15px;
+}
+.nav-li:hover {
+      border-left: solid 5px #ddd;
+      background-color: rgba(0, 0, 0, .8);
+}
+.nav-a {
+      display: block;
+      padding: 30px 20px;
+}
+}
