@@ -1,7 +1,10 @@
 body {
+  max-width: 100%;
+  min-width: 100%;
   background-image: url(./Imagenes\ Web/fondo.jpg);
   background-size: cover;
   background-attachment: fixed;
+  user-select: none;
 }
 
 a {
@@ -26,9 +29,8 @@ a {
 
 .search-input {
   width: 100%;
-  min-width: 320px;
   max-width: 500px;
-  min-width: 50px;
+  min-width: 340px;
   height: 50px;
   padding-left: 50px;
   padding-right: 20px;
@@ -179,27 +181,15 @@ a {
 
 
 @media screen and (max-width:768px) {
-  .nav-cont {
-    background-color: rgb(0, 0, 0, .9);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: 10;
-    visibility: hidden;
-  }
-  
   .flechaNav{
-    height: 50px;
-    margin: 10px;
+    height: 40px;
+    margin: 15px;
     visibility: hidden;
   }
-  
   #btn:checked~* .flechaNav {
     visibility: visible;
-    animation: flecha .65s linear;
+    animation: flecha .5s linear;
   }
-
   @keyframes flecha {
     0%{
       transform: rotate(180deg);
@@ -210,16 +200,37 @@ a {
     100%{
       transform: rotate(360deg);
     }
-    
   }
-  
+
+
+  .nav-cont {
+    background-color: rgb(0, 0, 0, .9);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    visibility: hidden;
+    animation: navbars .5s linear;
+  }
+
+
+  /* @keyframes navbars {
+    0% {
+      right: 0;
+    }
+    100% {
+      visibility: hidden;
+      right: 100%;
+    }
+  } */
+
   #btn:checked~*.nav-cont {
     visibility: visible;
     position: absolute;
     z-index: 30;
-    animation: navbar .65s linear;
+    animation: navbar .5s linear;
   }
-
   @keyframes navbar {
     0% {
       right: 100%;
