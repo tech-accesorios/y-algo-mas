@@ -183,7 +183,7 @@ a {
     height: 40px;
     margin: 15px;
     visibility: hidden;
-    animation: arrow .5s linear;
+    animation: arrow .3s linear;
 }
 @keyframes arrow {
   0% {
@@ -201,7 +201,7 @@ a {
 }  
   #btn:checked~* .flechaNav {
     visibility: visible;
-    animation: flecha .5s linear;
+    animation: flecha .3s linear;
   }
   @keyframes flecha {
     0%{
@@ -222,8 +222,9 @@ a {
     position: absolute;
     top: 0;
     z-index: 10;
+    right: 100%;
     visibility: hidden;
-    animation: navbars .5s linear;
+    animation: navbars .3s linear;
   }
   @keyframes navbars {
     0% {
@@ -239,7 +240,7 @@ a {
     visibility: visible;
     position: absolute;
     z-index: 30;
-    animation: navbar .5s linear;
+    animation: navbar .3s linear;
   }
   @keyframes navbar {
     0% {
