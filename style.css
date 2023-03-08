@@ -222,7 +222,6 @@ a {
     position: absolute;
     top: 0;
     z-index: 10;
-    right: 100%;
     visibility: hidden;
     animation: navbars .3s linear;
   }
