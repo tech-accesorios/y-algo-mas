@@ -1,6 +1,4 @@
 body {
-  max-width: 100%;
-  min-width: 100%;
   background-image: url(./Imagenes\ Web/fondo.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -185,7 +183,22 @@ a {
     height: 40px;
     margin: 15px;
     visibility: hidden;
+    animation: arrow .5s linear;
+}
+@keyframes arrow {
+  0% {
+    right: 0;
+    visibility: visible;
+    transform: rotate(360deg);
   }
+  25% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+    right: 100%;
+  }
+}  
   #btn:checked~* .flechaNav {
     visibility: visible;
     animation: flecha .5s linear;
@@ -195,7 +208,6 @@ a {
       transform: rotate(180deg);
     }
     75%{
-      transform: rotate(180deg);
     }
     100%{
       transform: rotate(360deg);
@@ -213,17 +225,15 @@ a {
     visibility: hidden;
     animation: navbars .5s linear;
   }
-
-
-  /* @keyframes navbars {
+  @keyframes navbars {
     0% {
       right: 0;
+      visibility: visible;
     }
     100% {
-      visibility: hidden;
       right: 100%;
     }
-  } */
+  }  
 
   #btn:checked~*.nav-cont {
     visibility: visible;
