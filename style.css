@@ -88,11 +88,6 @@ a {
   justify-content: center;
 }
 
-.div-cards {
-  width: 250px;
-  max-width: 90%;
-}
-
 .presio {
   display: flex;
   justify-content: flex-end;
@@ -100,6 +95,8 @@ a {
 }
 
 .card {
+  width: 250px;
+  max-width: 90%;
   border-radius: 0;
   border: 0;
 }
@@ -183,7 +180,7 @@ a {
     height: 40px;
     margin: 15px;
     visibility: hidden;
-    animation: arrow .3s linear;
+    animation: arrow .5s linear;
 }
 @keyframes arrow {
   0% {
@@ -201,7 +198,7 @@ a {
 }  
   #btn:checked~* .flechaNav {
     visibility: visible;
-    animation: flecha .3s linear;
+    animation: flecha .5s linear;
   }
   @keyframes flecha {
     0%{
@@ -223,7 +220,7 @@ a {
     top: 0;
     z-index: 10;
     visibility: hidden;
-    animation: navbars .3s linear;
+    animation: navbars .5s linear;
   }
   @keyframes navbars {
     0% {
@@ -239,7 +236,7 @@ a {
     visibility: visible;
     position: absolute;
     z-index: 30;
-    animation: navbar .3s linear;
+    animation: navbar .5s linear;
   }
   @keyframes navbar {
     0% {
@@ -280,5 +277,9 @@ a {
   .nav-a {
     display: block;
     padding: 30px 0;
+  }
+
+  .card{
+    width: 200px;
   }
 }
