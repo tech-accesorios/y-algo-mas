@@ -256,7 +256,7 @@ a {
   @keyframes navbars {
     0% {
       right: 0;
-      visibility: visible;
+      visibility: visible;      
     }
     100% {
       right: 100%;
@@ -264,6 +264,7 @@ a {
   }  
 
   #btn:checked~*.nav-cont {
+    backdrop-filter: blur(8px);
     visibility: visible;
     position: absolute;
     z-index: 30;
