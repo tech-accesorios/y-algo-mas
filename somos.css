@@ -1,16 +1,39 @@
 .somos-div{
     display: flex;
     justify-content: center;
+
 }
 .somos-p{
-    width: 77%;
+    width: 80%;
     color: rgba(0, 0, 0, 0.75);
     font-family: 'Big Shoulders Display';
-    font-size: 27px;
-    display: block;
     text-align: center;
     
 }
 .logo{
     margin-top: 80px;
+}
+
+
+@media screen and (min-width:769px) {
+    .somos-div{        
+    margin-top: 100px;
+        
+    }
+    .somos-p{
+        font-size: 40px;
+        
+    }
+}
+
+
+
+@media screen and (max-width:769px) {
+    .somos-div{
+        margin-top: 0;
+    }
+    .somos-p{
+        font-size: 27px;
+        
+    }
 }
