@@ -62,6 +62,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   margin-right: 12%;
+  margin-top: 70px;
 }
 
 .ta {
@@ -178,7 +179,7 @@ a {
 
   .nav-cont {
     height: 100%;
-    position: relative;
+    position: fixed;
     overflow-x: hidden;
     transition: all 2s ease;
     z-index: 20;
@@ -210,8 +211,7 @@ a {
   ::-webkit-scrollbar{
     width: 5px;
   }
-
-  
+    
   .flechaNav{
     height: 40px;
     margin: 15px;
@@ -264,7 +264,6 @@ a {
   }  
 
   #btn:checked~*.nav-cont {
-    backdrop-filter: blur(8px);
     visibility: visible;
     position: absolute;
     z-index: 30;
@@ -283,17 +282,20 @@ a {
   #btn {
     display: none;
   }
-
+  
   [for="btn"] {
     visibility: initial;
     display: flex;
     justify-content: flex-end;
     z-index: 30;
   }
-
+  
   .nav-btn {
     width: 40px;
     margin: 15px;
+    position: fixed;
+    z-index: 10;
+    transition: top 1s;
   }
 
   .nav-ul{

@@ -22,3 +22,23 @@ while (idx != -1) {
 console.log(indices);
   
 })
+
+
+
+let tresBarras= document.querySelector('.nav-btn')
+let navcont= document.querySelector('.nav-cont')
+
+
+let ultimoScroll= scrollY
+window.addEventListener('scroll',()=>{
+  let scrollActual= scrollY
+  if(ultimoScroll> scrollActual){
+    tresBarras.style.top='0'
+    navcont.style.top='0'
+  }
+  else{
+    tresBarras.style.top='-70px'
+    navcont.style.top='-100px'
+  }
+  ultimoScroll= scrollActual
+})
