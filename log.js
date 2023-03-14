@@ -24,10 +24,9 @@ console.log(indices);
 })
 
 
-
-let tresBarras= document.querySelector('.nav-btn')
-let navcont= document.querySelector('.nav-cont')
-
+// Autoscroll del navbar al bajar o subir
+let tresBarras= document.querySelector('.nav-btn'),
+navcont= document.querySelector('.nav-cont')
 
 let ultimoScroll= scrollY
 window.addEventListener('scroll',()=>{
@@ -38,7 +37,9 @@ window.addEventListener('scroll',()=>{
   }
   else{
     tresBarras.style.top='-70px'
-    navcont.style.top='-100px'
+    if(window.screen.width>768){
+      navcont.style.top='-100px'  
+    }
   }
   ultimoScroll= scrollActual
 })
