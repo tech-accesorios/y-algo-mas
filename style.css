@@ -205,8 +205,17 @@ a {
   .nav-a {
     color: #00031b;
     position: relative;
-    margin: 0 40px;
+    margin: 0 23px;
   }
+
+  #comoComprar{
+  width: 207px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+}
 
   .nav-a:hover {
     color: #6034ff;
@@ -324,6 +333,18 @@ a {
   .nav-a {
     display: block;
     padding: 30px 0;
+  }
+
+  #comoComprar{
+    width: 207px;
+    height: 0px;
+    margin: 0 auto;
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
   }
 
   .card{
