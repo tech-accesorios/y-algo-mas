@@ -5,7 +5,7 @@
 }
 .somos-p{
     width: 80%;
-    color: rgba(0, 0, 0, 0.75);
+    color: #444;
     font-family: 'Big Shoulders Display';
     text-align: center;
     
@@ -14,6 +14,19 @@
     margin-top: 80px;
 }
 
+.techA{
+    color: #6034ff;
+    font-family: 'Big Shoulders Display';
+    text-shadow: #0000a7a4 0 0 20px;
+    -webkit-text-stroke: #0000a7a4 .5px;
+}
+
+.sub-parrafo{
+    width: 80%;
+    color: #666;
+    font-family: 'Big Shoulders Display';
+    text-align: center;
+}
 
 @media screen and (min-width:769px) {
     .somos-div{        
@@ -22,7 +35,9 @@
     }
     .somos-p{
         font-size: 40px;
-        
+    }
+    .sub-parrafo{
+        font-size: 20px;
     }
 }
 
@@ -34,6 +49,8 @@
     }
     .somos-p{
         font-size: 27px;
-        
+    }
+    .sub-parrafo{
+        font-size: 10px;        
     }
 }
