@@ -4,6 +4,13 @@ body {
   background-attachment: fixed;
   user-select: none;
 }
+img { 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 .filtro{
   display: none;
 }
@@ -24,7 +31,7 @@ a {
 .search-logo {
   display: flex;
   justify-content: space-between;
-  top: 10px;
+  /* top: 10px; */
 }
 
 
@@ -181,9 +188,10 @@ a {
   }
 
   .nav-cont {
-    height: 100%;
+    width: 100%;
+    height: 80px;
+    display: flex;
     position: fixed;
-    overflow-x: hidden;
     z-index: 20;
     transition: top 0.3s linear;
   }

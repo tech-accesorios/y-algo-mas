@@ -1,12 +1,20 @@
-const $articulo= document.querySelectorAll('.card-title')
+// const $articulo= document.querySelectorAll('.card-title')
+// document.addEventListener('keyup', e =>{
+//   $articulo.forEach(prod=>{
+//     if(prod.innerHTML.toLowerCase().includes(e.target.value)){
+//         prod.closest('.card').classList.remove('filtro')
+//     }
+//     else{
+//         prod.closest('.card').classList.add('filtro')
+//     }
+//   })
+// })
+
 document.addEventListener('keyup', e =>{
-  $articulo.forEach(prod=>{
-    if(prod.innerHTML.toLowerCase().includes(e.target.value)){
-        prod.closest('.card').classList.remove('filtro')
-    }
-    else{
-        prod.closest('.card').classList.add('filtro')
-    }
+  document.querySelectorAll('.card-title').forEach(prod=>{
+    prod.innerHTML.toLowerCase().includes(e.target.value.toLowerCase())
+    ?prod.closest('.card').classList.remove('filtro')
+    :prod.closest('.card').classList.add('filtro')
   })
 })
 
