@@ -1,27 +1,16 @@
-const $buscador= document.getElementById('buscador'),
-$cardTitle= document.querySelectorAll('.card-title')
-// $contenedor= document.querySelector('.contenedor')
-
-let productos=[]
-$cardTitle.forEach((prod, indice)=>{
-  producto= prod.innerHTML.toUpperCase()
-   productos[indice]= producto
+const $articulo= document.querySelectorAll('.card-title')
+document.addEventListener('keyup', e =>{
+  $articulo.forEach(prod=>{
+    if(prod.innerHTML.toLowerCase().includes(e.target.value)){
+        prod.closest('.card').classList.remove('filtro')
+    }
+    else{
+        prod.closest('.card').classList.add('filtro')
+    }
+  })
 })
-console.log(productos)
 
-var indices = [];
-$buscador.addEventListener('keypress',()=>{
-  valorBuscador= $buscador.value.toUpperCase()
-  let palabras= valorBuscador.split(' ')
 
-let idx = productos.indexOf(palabras);
-while (idx != -1) {
-  indices.push(idx);
-  idx = array.indexOf(palabras, idx + 1);
-}
-console.log(indices);
-  
-})
 
 
 // Autoscroll del navbar al bajar o subir
@@ -37,7 +26,7 @@ window.addEventListener('scroll',()=>{
   }
   else{
     tresBarras.style.top='-70px'
-    if(window.screen.width>768){
+    if(window.innerWidth>768){
       navcont.style.top='-100px'  
     }
   }

@@ -4,6 +4,9 @@ body {
   background-attachment: fixed;
   user-select: none;
 }
+.filtro{
+  display: none;
+}
 
 ::-webkit-scrollbar{
   background-color: white;
