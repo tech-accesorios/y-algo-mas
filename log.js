@@ -10,7 +10,7 @@
 //   })
 // })
 
-document.addEventListener('keyup', e =>{
+document.addEventListener('input', e =>{
   document.querySelectorAll('.card-title').forEach(prod=>{
     prod.innerHTML.toLowerCase().includes(e.target.value.toLowerCase())
     ?prod.closest('.card').classList.remove('filtro')
