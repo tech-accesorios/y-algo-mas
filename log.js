@@ -38,7 +38,6 @@ setTimeout(() => {
 // })
 
 const $buscador= document.querySelector('#buscador')
-
 $buscador.addEventListener('input', e =>{
   document.querySelectorAll('.card-title').forEach(prod=>{
     prod.innerHTML.toLowerCase().includes(e.target.value.toLowerCase())
