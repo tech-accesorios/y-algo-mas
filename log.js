@@ -10,7 +10,24 @@
 //   })
 // })
 
-document.addEventListener('input', e =>{
+
+// const $buscador= document.querySelector('#buscador'),
+// $artiuclo= document.querySelectorAll('.card-title'),
+// $card= document.querySelectorAll('.card')
+
+// document.addEventListener('click', e=>{
+//   console.log('click')
+//   if($buscador.value.length= $buscador.value.length[0]){
+//     $card.forEach(prod=>{
+//       console.log(prod)
+//       prod.classList.remove('filtro')
+//     })
+//   }
+// })
+
+
+
+document.addEventListener('keyup', e =>{
   document.querySelectorAll('.card-title').forEach(prod=>{
     prod.innerHTML.toLowerCase().includes(e.target.value.toLowerCase())
     ?prod.closest('.card').classList.remove('filtro')
