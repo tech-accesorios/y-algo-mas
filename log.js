@@ -26,8 +26,20 @@
 // })
 
 
+setTimeout(() => {
 
-document.addEventListener('keyup', e =>{
+// document.addEventListener('keyup', e =>{
+//   document.querySelectorAll('.card-title').forEach(prod=>{
+//     console.log(e.target.value.toLowerCase())
+//     prod.innerHTML.toLowerCase().includes(e.target.value.toLowerCase())
+//     ?prod.closest('.card').classList.remove('filtro')
+//     :prod.closest('.card').classList.add('filtro')
+//   })
+// })
+
+const $buscador= document.querySelector('#buscador')
+
+$buscador.addEventListener('input', e =>{
   document.querySelectorAll('.card-title').forEach(prod=>{
     prod.innerHTML.toLowerCase().includes(e.target.value.toLowerCase())
     ?prod.closest('.card').classList.remove('filtro')
@@ -57,3 +69,7 @@ window.addEventListener('scroll',()=>{
   }
   ultimoScroll= scrollActual
 })
+
+
+  
+}, 1000);
