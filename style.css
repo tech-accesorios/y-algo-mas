@@ -321,19 +321,27 @@ a {
 
   .nav-ul{
     padding-left: 0;
-    position: relative;
-    text-align: center;
+    /* position: relative;
+    text-align: center; */
   }
   
   .nav-li:hover {
     border-left: solid 5px #ddd;
     background-color: rgba(0, 0, 0, .8);
   }
+
+  .nav-li{
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
   
-  .nav-a {
+  /* .nav-a {
     display: block;
     padding: 30px 0;
-  }
+  } */
 
   #comoComprar{
     width: 207px;
