@@ -1,42 +1,6 @@
-// const $articulo= document.querySelectorAll('.card-title')
-// document.addEventListener('keyup', e =>{
-//   $articulo.forEach(prod=>{
-//     if(prod.innerHTML.toLowerCase().includes(e.target.value)){
-//         prod.closest('.card').classList.remove('filtro')
-//     }
-//     else{
-//         prod.closest('.card').classList.add('filtro')
-//     }
-//   })
-// })
-
-
-// const $buscador= document.querySelector('#buscador'),
-// $artiuclo= document.querySelectorAll('.card-title'),
-// $card= document.querySelectorAll('.card')
-
-// document.addEventListener('click', e=>{
-//   console.log('click')
-//   if($buscador.value.length= $buscador.value.length[0]){
-//     $card.forEach(prod=>{
-//       console.log(prod)
-//       prod.classList.remove('filtro')
-//     })
-//   }
-// })
-
-
 setTimeout(() => {
 
-// document.addEventListener('keyup', e =>{
-//   document.querySelectorAll('.card-title').forEach(prod=>{
-//     console.log(e.target.value.toLowerCase())
-//     prod.innerHTML.toLowerCase().includes(e.target.value.toLowerCase())
-//     ?prod.closest('.card').classList.remove('filtro')
-//     :prod.closest('.card').classList.add('filtro')
-//   })
-// })
-
+// Buscador 
 const $buscador= document.querySelector('#buscador')
 $buscador.addEventListener('input', e =>{
   document.querySelectorAll('.card-title').forEach(prod=>{
@@ -70,5 +34,10 @@ window.addEventListener('scroll',()=>{
 })
 
 
+
+// const SmartWatchNOGA= document.querySelector('.SmartWatchNOGA')
+// SmartWatchNOGA.addEventListener('click', e=>{
+//   window.open('./ventanasEmergentes/RelojSmartWatchNOGA.html')
+// })
   
 }, 1000);

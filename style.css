@@ -327,11 +327,11 @@ a {
   
   .nav-li:hover {
     border-left: solid 5px #ddd;
-    background-color: rgba(0, 0, 0, .8);
+    /* background-color: rgba(0, 0, 0, .8); */
   }
 
   .nav-li{
-    height: 180px;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
