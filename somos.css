@@ -54,6 +54,7 @@
         font-size: 27px;
     }
     .sub-parrafo{
-        font-size: 15px;        
+        font-size: 15px;  
+        display: flex;
     }
 }

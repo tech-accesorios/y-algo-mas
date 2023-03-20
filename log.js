@@ -35,9 +35,12 @@ window.addEventListener('scroll',()=>{
 
 
 
-// const SmartWatchNOGA= document.querySelector('.SmartWatchNOGA')
-// SmartWatchNOGA.addEventListener('click', e=>{
-//   window.open('./ventanasEmergentes/RelojSmartWatchNOGA.html')
+// const $SmartWatchNOGA= document.querySelector('.SmartWatchNOGA'),
+// $body= document.querySelector('body'),
+// $carrucel= document.querySelector('#carouselExampleIndicators')
+// $SmartWatchNOGA.addEventListener("click", e=>{
+//   console.log(e.target.value)
+//   $carrucel.style.display= 'block'
 // })
   
 }, 1000);
