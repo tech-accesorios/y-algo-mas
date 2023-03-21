@@ -359,3 +359,36 @@ a {
     width: 200px;
   }
 }
+
+
+.ventanaE{
+  width: 100vw;
+  height: 100vh;
+  background: #000b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  visibility: hidden;
+  flex-direction: column;
+}
+.ventanaE-img{
+ height: 40vh;
+}
+
+.ventanaE-btn{
+  width: 40px;
+  height: 40px;
+  background-color: #22f;
+  color: white;
+  margin-top: 25vh;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+}
+.ventanaE-btn:active{
+  background-color: #00f;
+}
