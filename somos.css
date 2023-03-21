@@ -3,8 +3,11 @@
     justify-content: center;
 
 }
+.comoComprar{
+    white-space: nowrap;
+}
 .somos-p{
-    width: 84%;
+    width: 80%;
     color: #444;
     font-family: 'Big Shoulders Display';
     text-align: center;
