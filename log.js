@@ -32,17 +32,64 @@ window.addEventListener('scroll',()=>{
   ultimoScroll= scrollActual
 })
 
-const $smartWatchNoga= document.getElementById('smartWatchNoga'),
-$ventanaE= document.querySelector('.ventanaE'),
-$ventanaEbtn= document.querySelector('.ventanaE-btn')
 
-$smartWatchNoga.addEventListener('click', e=>{
-  $ventanaE.style.visibility='visible'
-})
+// ver mas imagenes
+// const $smartWatchNoga= document.getElementById('smartWatchNoga'),
+// $ventanaE= document.querySelector('.ventanaE'),
+// $ventanaEbtn= document.querySelector('.ventanaE-btn')
 
-$ventanaEbtn.addEventListener('click',e=>{
-  $ventanaE.style.visibility='hidden'
-})
+// $smartWatchNoga.addEventListener('click', e=>{
+//   $ventanaE.style.visibility='visible'
+// })
+
+// $ventanaEbtn.addEventListener('click',e=>{
+//   $ventanaE.style.visibility='hidden'
+// })
+
+// delisar fotos en carrucel
+// const $carrucel= document.querySelectorAll()
+
+// $imgTA= document.querySelectorAll('.card-img-top')
+
+
+// document.addEventListener('click',e=>{
+//   // const valorId= e.target.getAttribute('id')
+//   // console.log(valorId)
+
+//   const $contenedorImg= document.querySelector('.ventanaE-c')
+
+//   const $div= document.createElement('div')
+//   // .setAttribute('class', 'ventanaE-c-img')
+//   // $img= document.createElement('img')
+//   // $img.setAttribute('class', 'ventanaE-img')
+//   // $img.setAttribute('src', '')
+
+//   // $div.appendChild($img)
+//   $contenedorImg.appendChild($div)
+//   console.log(e.target)
+
+
+
+  
+//   })
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -361,7 +361,7 @@ a {
 }
 
 
-.ventanaE{
+/* .ventanaE{
   width: 100vw;
   height: 100vh;
   background: #000b;
@@ -371,16 +371,29 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
   visibility: hidden;
   flex-direction: column;
+  z-index: 100;
+}
+.ventanaE-c{
+  width: 300vw;
+  position: relative;
+  left: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.ventanaE-c-img{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 .ventanaE-img{
- height: 40vh;
+  height: 40vh;
 }
 
 .ventanaE-btn{
   width: 50%;
+  max-width: 300px;
   height: 40px;
   background-color: #22f;
   color: white;
@@ -391,4 +404,4 @@ a {
 }
 .ventanaE-btn:active{
   background-color: #00f;
-}
+} */
