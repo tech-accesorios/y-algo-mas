@@ -308,7 +308,7 @@ a {
     width: 100vw;
     height: 48px;
     position: relative;
-    top: calc(100vh - 78px);
+    top: calc(100vh - 78px); 
     display: flex;
     justify-content: flex-end;
     z-index: 30;
