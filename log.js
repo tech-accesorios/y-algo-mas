@@ -13,18 +13,18 @@ $buscador.addEventListener('input', e =>{
 
 
 // Autoscroll del navbar al bajar o subir
-let tresBarras= document.querySelector('.nav-btn'),
+let btnNav= document.querySelector('.btn-nav'),
 navcont= document.querySelector('.nav-cont')
 
 let ultimoScroll= scrollY
 window.addEventListener('scroll',()=>{
   let scrollActual= scrollY
   if(ultimoScroll> scrollActual){
-    tresBarras.style.top='0'
+    btnNav.style.top='calc(100vh - 48px)'
     navcont.style.top='0'
   }
   else{
-    tresBarras.style.top='-70px'
+    btnNav.style.top='100vh'
     if(window.innerWidth>768){
       navcont.style.top='-100px'  
     }
