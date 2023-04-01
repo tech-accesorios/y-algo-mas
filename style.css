@@ -312,7 +312,6 @@ a {
     bottom: 0;
     display: flex;
     justify-content: flex-end;
-    /* visibility: initial; */
     z-index: 30;
     transition: top 0.3s linear;
   }

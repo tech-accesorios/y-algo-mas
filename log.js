@@ -67,10 +67,6 @@ window.addEventListener('scroll',()=>{
 //   // $div.appendChild($img)
 //   $contenedorImg.appendChild($div)
 //   console.log(e.target)
-
-
-
-  
 //   })
   
   
