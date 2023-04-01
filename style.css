@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   background-image: url(./Imagenes\ Web/fondo.jpg);
   background-size: cover;
@@ -308,7 +311,8 @@ a {
     width: 100vw;
     height: 48px;
     position: relative;
-    top: calc(100vh - 78px); 
+    top: calc(100vh - 48px);
+    /* bottom: 0px; */
     display: flex;
     justify-content: flex-end;
     z-index: 30;
