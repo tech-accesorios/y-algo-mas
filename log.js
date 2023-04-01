@@ -20,7 +20,7 @@ let ultimoScroll= scrollY
 window.addEventListener('scroll',()=>{
   let scrollActual= scrollY
   if(ultimoScroll> scrollActual){
-    btnNav.style.top='calc(100vh - 48px)'
+    btnNav.style.top='calc(100vh - 88px)'
     navcont.style.top='0'
   }
   else{
