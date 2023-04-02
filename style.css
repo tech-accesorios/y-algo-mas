@@ -232,7 +232,7 @@ a {
     width: 5px;
   }
     
-  .flechaNav{
+  /* .flechaNav{
     width: 34px;
     margin: 8px 16px;
     visibility: hidden;
@@ -260,7 +260,7 @@ a {
     100%{
       transform: rotate(360deg);
     }
-  }
+  } */
 
 
   .nav-cont {
@@ -272,7 +272,6 @@ a {
     z-index: 30;
     visibility: hidden;
     animation: navbars .5s linear;
-    /* transition: top 0.3s linear; */
   }
   @keyframes navbars {
     0% {
@@ -305,27 +304,56 @@ a {
   }
   
   [for="btn"] {
-    width: 100vw;
-    height: 48px;
     position: relative;
-    top: calc(100vh - 88px);
+    top: 84vh;
     display: flex;
     justify-content: flex-end;
     z-index: 30;
     transition: top 0.3s linear;
   }
   .btn-nav{
-    background-color: #6034ff;
-    position: fixed;
+    margin-right: 20px;
+    z-index: 40;
   }
+
   
   .nav-btn {
-    width: 34px;
-    margin: 8px 16px;
+    width: 50px;
     position: fixed;
     z-index: 30;
     transition: bottom 0.3s linear;
   }
+
+.nav-btn{
+    animation: btn .5s linear;
+}
+@keyframes btn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}  
+
+#btn:checked~* .nav-btn {
+    animation: btnn .5s linear;
+  }
+  @keyframes btnn {
+    0%{
+      transform: rotate(45deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+
+
+
+
+
+
+
 
   .nav-ul{
     padding-left: 0;
