@@ -231,17 +231,21 @@ a {
   ::-webkit-scrollbar{
     width: 5px;
   }
-  
+    
+  /* ----------------------------------------- */
   .nav-cont {
     background-color: rgb(0, 0, 0, .9);
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     z-index: 30;
     visibility: hidden;
-    animation: navbars .5s linear;
   }
+  .navCont-secondAction {
+    animation: navbars .5s linear;    
+  }
+
   @keyframes navbars {
     0% {
       right: 0;
@@ -250,9 +254,8 @@ a {
     100% {
       right: 100%;
     }
-  }  
-
-  #btn:checked~*.nav-cont {
+  }
+  .navCont-firstAction {
     visibility: visible;
     position: absolute;
     z-index: 30;
@@ -267,22 +270,16 @@ a {
       right: 0;
     }
   }
+  /* --------------------------------------- */
 
-  #btn {
-    display: none;
-  }
-  
-  [for="btn"] {
+  .contBtn{
+    margin-right: 20px;
     position: relative;
     top: 84vh;
     display: flex;
     justify-content: flex-end;
-    z-index: 30;
-    transition: top 0.3s linear;
-  }
-  .btn-nav{
-    margin-right: 20px;
     z-index: 40;
+    transition: top 0.3s linear;
   }
 
   
@@ -294,10 +291,10 @@ a {
     transition: bottom 0.3s linear;
   }
 
-  
-  #btn:checked~* .nav-btn {
+  /* ---------------------------------------------- */
+  .navBtn-firstAction {
     animation: btnn .5s linear;
-    animation-fill-mode: both;
+    animation-fill-mode: both; 
   }
   @keyframes btnn {
     0%{
@@ -308,7 +305,7 @@ a {
     }
   }
   
- .nav-btn{
+ .navBtn-secondAction{
       animation: btn .5s linear;
   }
   @keyframes btn {
@@ -319,6 +316,7 @@ a {
       transform: rotate(0deg);
     }
   }
+  /* ---------------------------------------------- */
 
   .nav-ul{
     padding-left: 0;

@@ -13,24 +13,57 @@ $buscador.addEventListener('input', e =>{
 
 
 // Autoscroll del navbar al bajar o subir
-let btnNav= document.querySelector('.btn-nav'),
+let contBtn= document.querySelector('.contBtn'),
 navcont= document.querySelector('.nav-cont')
 
 let ultimoScroll= scrollY
 window.addEventListener('scroll',()=>{
   let scrollActual= scrollY
   if(ultimoScroll> scrollActual){
-    btnNav.style.top='84vh'
+    contBtn.style.top='84vh'
     navcont.style.top='0'
   }
   else{
-    btnNav.style.top='100vh'
+    contBtn.style.top='100vh'
     if(window.innerWidth>768){
       navcont.style.top='-100px'  
     }
   }
   ultimoScroll= scrollActual
 })
+
+// NAVBAR
+let navBtn= document.querySelector('.nav-btn')
+let action= false
+navBtn.addEventListener('click', ()=>{
+  if(!action){
+    navBtn.classList.add('navBtn-firstAction')
+    navcont.classList.add('navCont-firstAction')
+    navBtn.classList.remove('navBtn-secondAction')
+    navcont.classList.remove('navCont-secondAction')
+    action= true
+  }else{
+    navBtn.classList.add('navBtn-secondAction')
+    navcont.classList.add('navCont-secondAction')
+    navBtn.classList.remove('navBtn-firstAction')
+    navcont.classList.remove('navCont-firstAction')
+    action= false
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ver mas imagenes
