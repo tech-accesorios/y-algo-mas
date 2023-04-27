@@ -24,7 +24,7 @@ window.addEventListener('scroll',()=>{
     navcont.style.top='0'
   }
   else{
-    contBtn.style.top='100vh'
+    contBtn.style.top='110vh'
     if(window.innerWidth>768){
       navcont.style.top='-100px'  
     }

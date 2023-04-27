@@ -58,7 +58,7 @@ a {
 }
 
 .search-lupa {
-  width: 28px;
+  width: 40px;
   display: inline;
   position: relative;
   justify-content: center;
@@ -332,7 +332,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+  }
+  .somos{
+    height: 180px;
+    color: #ccc;
+    font-family: 'Big Shoulders Display';
+    display: flex;
+    justify-content: center;
+    align-items: end;
   }
 
   #comoComprar{
